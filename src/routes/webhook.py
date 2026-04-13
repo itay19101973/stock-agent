@@ -1,7 +1,5 @@
 from fastapi import APIRouter, Request
 
-from src.repository.telegram import send_message
-from src.config import chat_id
 from src.services.commands import COMMANDS
 from src.routes.utils.webhook_utils import is_old_message
 

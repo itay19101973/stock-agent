@@ -3,3 +3,4 @@ uvicorn[standard]
 python-telegram-bot==20.*
 requests
 python-dotenv
+pydantic

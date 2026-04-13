@@ -28,5 +28,14 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+  ngrok:
+    image: ngrok/ngrok:latest
+    command: http app:8000 --log=stdout
+    environment:
+      NGROK_AUTHTOKEN: 3CG5ROZCKm4ZrYmgISLBvE3FDRV_72MyA8vzWgu7Gkh6Gngtg
+    ports:
+      - "4040:4040"
+    depends_on:
+      - app
 volumes:
   postgres_data:

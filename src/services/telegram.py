@@ -9,3 +9,7 @@ def reply_hi(data: Update):
 
 def reply_menu(data: Update):
     send_message(data.message.chat.id, LIST_OF_COMMANDS)
+
+
+def reply_rita(data: Update):
+    send_message(data.message.chat.id, "She is the most bitch of all bitches that i know")

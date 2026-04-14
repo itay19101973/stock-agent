@@ -26,7 +26,7 @@ class Chat(BaseModel):
 
 class Message(BaseModel):
     message_id: int
-    from_: Optional[FromUser] = None  # "from" is reserved keyword
+    from_: Optional[FromUser] = None
     chat: Chat
     date: int
     text: str

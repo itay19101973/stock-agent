@@ -9,3 +9,4 @@ if not TOKEN:
 TELEGRAM_API = f"https://api.telegram.org/bot{TOKEN}"
 
 chat_id = os.getenv("CHAT_ID")
+stock_data_api_key = os.getenv("STOCK_DATA_API_KEY")

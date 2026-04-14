@@ -4,7 +4,7 @@ import requests
 import time
 
 
-def get_ngrok_url():
+def get_ngroc_url():
     time.sleep(5)
 
     for _ in range(10):

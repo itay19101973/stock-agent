@@ -4,8 +4,8 @@ from src.app_types.general import Update
 
 
 def reply_hi(data: Update):
-    send_message(data["message"]["chat"]["id"], "hi 👋")
+    send_message(data.message.chat.id, "hi 👋")
 
 
 def reply_menu(data: Update):
-    send_message(data["message"]["chat"]["id"], LIST_OF_COMMANDS)
+    send_message(data.message.chat.id, LIST_OF_COMMANDS)

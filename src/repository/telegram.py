@@ -15,7 +15,7 @@ def register_webhook_to_telegram(public_url: str):
     })
 
 
-def send_message(chat_id: str, text: str):
+def send_message(chat_id: int, text: str):
     requests.post(f"{TELEGRAM_API}/sendMessage", json={
         "chat_id": chat_id,
         "text": text

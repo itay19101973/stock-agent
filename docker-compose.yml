@@ -19,10 +19,8 @@ services:
     image: postgres:15
     container_name: telegram_bot_db
     restart: always
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: telegram_bot
+    env_file:
+      - .env
     ports:
       - "5432:5432"
     volumes:

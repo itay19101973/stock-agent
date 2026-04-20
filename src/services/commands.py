@@ -15,12 +15,12 @@ COMMANDS = {
         handler=reply_menu
     ),
     "rita": Command(
-        name="menu",
+        name="rita",
         description="",
         handler=reply_rita
     ),
     "stocks": Command(
-        name="menu",
+        name="stocks",
         description="for example 'stock snp' will return the data about snp index",
         handler=handle_get_stock_data
     ),
